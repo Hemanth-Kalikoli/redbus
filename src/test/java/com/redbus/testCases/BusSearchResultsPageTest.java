@@ -19,7 +19,7 @@ public class BusSearchResultsPageTest extends TestBase {
 	}
 	
 	@BeforeMethod
-	public void setUp() {
+	public void busSearch() {
 		initialization();
 		busTicketsHomePage = new BusTicketsHomePage();
 		busSearchResultsPage = busTicketsHomePage.searchBuses(prop.getProperty("fromCity"), 
