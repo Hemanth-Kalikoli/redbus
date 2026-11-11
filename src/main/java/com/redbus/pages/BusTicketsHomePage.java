@@ -75,7 +75,7 @@ public class BusTicketsHomePage extends TestBase {
 			toTextBox.clear();
 			toTextBox.sendKeys(cityName);
 			TestUtil.explicitWait(ExpectedConditions.invisibilityOf(spinnerIcon), 5);
-			TestUtil.explicitWait(ExpectedConditions.elementToBeClickable(firstSuggestion),10);
+			TestUtil.explicitWait(ExpectedConditions.elementToBeClickable(firstSuggestion),5);
 			firstSuggestion.click();
 		}
 		
