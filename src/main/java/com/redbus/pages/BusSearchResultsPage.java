@@ -22,7 +22,6 @@ public class BusSearchResultsPage extends TestBase{
 	}
 	
 	public String getNavigationText() {
-		TestUtil.explicitWait(ExpectedConditions.visibilityOf(busNavigation), 15);
 		return busNavigation.getAttribute("aria-label");
 	}
 
