@@ -140,7 +140,7 @@ public class BusTicketsHomePage extends TestBase {
 		
 		public BusSearchResultsPage clickOnSearchBusesButton() {
 			searchBusesButton.click();
-			TestUtil.explicitWait(ExpectedConditions.visibilityOf(busNavigation), 20);
+			//TestUtil.explicitWait(ExpectedConditions.visibilityOf(busNavigation), 20);
 			return new BusSearchResultsPage();
 		}
 		
