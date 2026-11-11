@@ -19,16 +19,16 @@ public class BusSearchResultsPageTest extends TestBase {
 	}
 	
 	@BeforeMethod
-	public void busSearch() {
+	public void setUp() {
 		initialization();
 		busTicketsHomePage = new BusTicketsHomePage();
-		busSearchResultsPage = busTicketsHomePage.searchBuses(prop.getProperty("fromCity"), 
-				prop.getProperty("toCity"),prop.getProperty("date"), 
-				prop.getProperty("month"), prop.getProperty("year"));
-	}
+		}
 	
 	@Test(priority = 1)
 	public void verifySearchResultsNavigation() {
+		busSearchResultsPage = busTicketsHomePage.searchBuses(prop.getProperty("fromCity"), 
+				prop.getProperty("toCity"),prop.getProperty("date"), 
+				prop.getProperty("month"), prop.getProperty("year"));
 		String expected = prop.getProperty("fromCity") + " to " + prop.getProperty("toCity");
 		Assert.assertEquals(busSearchResultsPage.getNavigationText(), expected);
 		Assert.assertTrue(busSearchResultsPage.isTabSelected("Bus"), "Bus tab is not selected");
