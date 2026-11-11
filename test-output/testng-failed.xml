@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Failed suite [Redbus Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.redbus.util.TestListener"/>
+    <listener class-name="com.redbus.util.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="3" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="com.redbus.testCases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginWithMobileNumber"/>
+        </methods>
+      </class> <!-- com.redbus.testCases.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Redbus Automation Suite] -->

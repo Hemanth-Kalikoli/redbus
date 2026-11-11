@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Redbus Automation Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,035,409</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Redbus Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.redbus.testCases.LoginPageTest</td><td><a href="#m0">loginWithMobileNumber</a></td><td rowspan="1">1794317365060</td><td rowspan="1">55522</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.redbus.testCases.BusSearchResultsPageTest</td><td><a href="#m1">verifySearchResultsNavigation</a></td><td rowspan="1">1794317650380</td><td rowspan="1">4428</td></tr><tr class="passedodd"><td rowspan="4">com.redbus.testCases.BusTicketsHomePageTest</td><td><a href="#m2">validateBusSearchMultipleTimes</a></td><td rowspan="3">1794317362328</td><td rowspan="3">304171</td></tr><tr class="passedodd"><td><a href="#m3">validateBusSearchMultipleTimes</a></td></tr><tr class="passedodd"><td><a href="#m4">validateBusSearchMultipleTimes</a></td></tr><tr class="passedodd"><td><a href="#m5">verifyBusSearch</a></td><td rowspan="1">1794318139120</td><td rowspan="1">226493</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.redbus.testCases.LoginPageTest#loginWithMobileNumber</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Log in&apos;]&quot;}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;27.0.1&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: /var/folders/kp/jc886w9s4xs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49597}, goog:processID: 33026, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49597/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d18a3f788a38913e22cd41733cd433bb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.redbus.util.TestUtil.explicitWait(TestUtil.java:83)
+	at com.redbus.pages.LoginPage.clickOnLoginButton(LoginPage.java:71)
+	at com.redbus.testCases.LoginPageTest.loginWithMobileNumber(LoginPageTest.java:29)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.redbus.testCases.BusSearchResultsPageTest#verifySearchResultsNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.redbus.testCases.BusTicketsHomePageTest#validateBusSearchMultipleTimes</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Chennai</td><td>Bangalore</td><td>12</td><td>November</td><td>2026</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.redbus.testCases.BusTicketsHomePageTest#validateBusSearchMultipleTimes</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Chennai</td><td>Hyderabad</td><td>21</td><td>November</td><td>2026</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.redbus.testCases.BusTicketsHomePageTest#validateBusSearchMultipleTimes</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Tirupati</td><td>Pune</td><td>3</td><td>December</td><td>2026</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.redbus.testCases.BusTicketsHomePageTest#verifyBusSearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
